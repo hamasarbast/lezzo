@@ -31,7 +31,7 @@ app.use(bodyParser.json());
 app.use("/xwardnga", xwardngaRoute);
 app.use('/market' , marketRoute);
 app.use('/image' , imageRoute);
-//app.use("/dashkan" , dashkanRoute);
+app.use("/dashkan" , dashkanRoute);
 
 
 app.use((req, res, next) => {
