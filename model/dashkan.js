@@ -7,6 +7,9 @@ const dashkanSchema = mongoose.Schema({
     RezhayDashkan:{
         type: Number
     },
+    image:{
+        type: String
+    },
     xwardnakan_dashkan:[{
         naweXwardn_dashkan:{
             type: String,
