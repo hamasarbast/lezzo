@@ -6,6 +6,7 @@ const xwardngaRoute = require("./routes/xwardnga");
 const marketRoute = require("./routes/market");
 const imageRoute = require("./routes/imageUpload");
 const dashkanRoute = require("./routes/dashkan");
+const cors = require('cors');
 
 // رەپتی داتابایس
 mongoose.connect(
@@ -27,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // handling routes
-
+app.use(cors());
 app.use("/xwardnga", xwardngaRoute);
 app.use('/market' , marketRoute);
 app.use('/image' , imageRoute);
